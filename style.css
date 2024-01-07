@@ -1,0 +1,114 @@
+/* Body Styles */
+body {
+    background: lightcyan;
+    display: flex;
+    gap: 0.5em;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    color: darkcyan;
+}
+
+/* Reset Styles for specific elements */
+ul, form, h1 {
+    padding: 5px;
+    margin: 0;
+}
+
+/* List Item Styles */
+li {
+    display: flex;
+    margin: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid lightskyblue;
+    align-items: center;
+}
+
+/* List Bullet Styles */
+.list-bullet {
+    width: 15px;
+    height: 15px;
+    border: 2px solid lightseagreen;
+    margin-right: 10px;
+    cursor: default;
+    position: relative;
+}
+
+/* Style for the checked list item */
+.list-bullet.checked::before {
+    content: '\2713';
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: darkcyan;
+    font-size: 20px;
+}
+
+/* List Text Styles */
+.list-text {
+    flex-grow: 1;
+    cursor: default;
+}
+
+/* Completed List Item Styles */
+.completed {
+    text-decoration: line-through;
+    text-decoration-color: darkcyan;
+}
+
+/* Task Input Styles */
+#task {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+#task:focus {
+    border-color: #2468a2;
+    box-shadow: 0 0 5px rgba(36, 104, 162, 0.5);
+}
+
+/* Submit Button Styles */
+#submit, button {
+    background-color: lightseagreen;
+    border-radius: 10px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+/* Hover Styles for Submit Button */
+#submit:hover {
+    background-color: rgb(27, 133, 128);
+}
+
+/* Button Styles */
+button {
+    background-color: rgb(255, 0, 0);
+    margin: 0px 0px 5px 10px;
+}
+
+/* Hover Styles for Button */
+button:hover {
+    background-color: rgb(159, 0, 0);
+}
+
